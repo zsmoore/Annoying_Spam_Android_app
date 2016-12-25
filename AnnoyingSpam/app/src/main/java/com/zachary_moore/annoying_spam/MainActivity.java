@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     AlertDialog.Builder confirmDialogBuilder = new AlertDialog.Builder(mContext)
                             .setIcon(android.R.drawable.ic_dialog_alert)
                             .setTitle("Send Messages?")
-                            .setMessage(String.format("Are you sure you want to send the message:\n\"%s\"\n%d times,\nTo the number:\n%s?", mMessageToSend, mNumberOfMessages, mNumberToSendTo))
+                            .setMessage(String.format("Are you sure you want to send:\n\"%s\"\n\n%d times\n\nTo the number:\n%s", mMessageToSend, mNumberOfMessages, mNumberToSendTo))
                             .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
